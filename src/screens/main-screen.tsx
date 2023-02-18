@@ -19,10 +19,8 @@ export default function MainScreen() {
       px={4}
       flex={1}
     >
-      <VStack space={5} alignItems="center">
-        <Box w="200px" h="50px">
-          <TaskItem isDone={checked} onToggleCheckbox={handlePressCheckbox} />
-        </Box>
+      <VStack space={5} alignItems="center" w="full">
+        <TaskItem isDone={checked} onToggleCheckbox={handlePressCheckbox} />
         <ThemeToggle />
       </VStack>
     </Center>
